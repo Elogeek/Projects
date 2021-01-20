@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY chifoumy / Feuille, pierre, ciseaux</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="container">
+
+        <h1> Chifoumy</h1>
+        <div id="regle">
+            Règle du jeu :</br>
+            Vous avez trois chances de gagner ( feuille, pierre ou ciseaux).
+            La pierre écrase les ciseaux et gagne. La feuille enveloppe la pierre et gagne. Les ciseaux découpent la feuille et gagnent.<br>
+            A partir de là chaque forme en bat une autre et perd contre une autre.
+        </div>
+        <br>
+        <br>
+
+        <div class='bloc-affichage'>
+            <div class='message'></div>
+            <div class='affichage-gagnant'></div>
+            <div class='scores'> Le score est de :
+                <div class='mon-score'><span class='ton-score'></span><span class='title-score'>Joueur 1 (vous)</span></div>
+                <div class='score-adverse'><span class='son-score'></span><span class='title-score'>Joueur 2 (ordi)</span></div>
+            </div>
+            <span class='fond-noir'></span>
+        </div>
+        <br>
+        <br>
+
+        <div class='conteneur-boutons'>
+            <button class='pierre'><img src="pierre.png" alt="image du jeu"/></button>
+            <button class='feuille'><img src="feuille.png" alt="image du jeu"/></button>
+            <button class='ciseaux'><img src="ciseaux.png" alt="image du jeu"/></button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #6adecd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    margin-top: 20px;
+    width: 45%;
+    height: 450px;
+}
+
+#sign {
+    font-weight: bold;
+    margin-top: -70px;
+    margin-left: 0;
+}

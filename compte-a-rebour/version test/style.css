@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;
+    background-color: darkorange;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.bloc{
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 35px;
+    border: 2px solid #fff;
+    padding: 10px;
+    color: #fff;
+}
+strong{
+    display: block;
+}
+h3 {
+    color: #fff;
+    font-size: xxx-large;
+}
+
+/*responsive*/
+@media screen and(max-width: 1000px){
+    body {
+        display :flex;
+        width: 100%;
+    }
+}

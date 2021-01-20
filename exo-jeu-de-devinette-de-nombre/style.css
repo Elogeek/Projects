@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 14px;
+    background-color: #00a4e4;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#game {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#answer,#astuces {
+    width: 15%;
+    text-align: center;
+    margin-top: 2%;
+    background-color: white;
+    padding-top: 2%;
+    border-radius: 45px;
+}
+
+#astuces,#answer:hover {
+    box-shadow:  inset 10px 10px 13px lightslategray, 10px 10px 13px lightslategray ;
+}
+
+#instructions, #solution {
+    width: 80%;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+#monNumber{
+    width: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+#monNumber:hover {
+     box-shadow:  inset 5px 5px 13px lightslategray, 5px 5px 13px lightslategray;
+}
+
+#instructions {
+    font-weight: bold;
+    text-decoration-line: none;
+    font-size: X-large;
+}
+
+#instructions { text-shadow: 0.2em 0.5em 0.1em #c1f8ff;
+}
+
+#newGame, #play {
+    width: 15%;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+}
+
+#newGame,#play:hover {
+    box-shadow:  inset 5px 5px 15px lightslategray, 5px 5px 15px lightslategray;
+}
+
+/* pour smartphone */
+@media screen and (max-width: 1050px){
+    #newGame, #play {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #jeu, #liste {
+        width: 100%;
+    }
+}

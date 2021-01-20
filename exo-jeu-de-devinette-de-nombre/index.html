@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mon jeu de devinette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+    <div id="container">
+        <div id="answer">Vos réponses données</div>
+        <div id="astuces">Astuces
+            <p>
+                Trouvez le chiffre compris entre 1 et 100
+            </p>
+            <p>
+                vous avez 10 essais !
+            </p>
+            <p id="aide">
+
+            </p>
+        </div>
+        <div id="game">
+            <div id="instructions"> Bienvenue dans ce jeu de devinette !</div>
+            <div id="solution"></div>
+            <input type="text" id="monNumber" placehoder="tapez votre nombre ici">
+            <button id="play">Jouer</button>
+            <button id="newGame"> Recommencer</button>
+            <div id chrono></div>
+        </div>
+    </div>
+</body>
+</html>

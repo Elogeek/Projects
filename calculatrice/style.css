@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 80%;
+    font-family: cursive, sans-serif;
+    margin: auto;
+    padding: 10px;
+}
+
+#container {
+    border: 5px solid deeppink;
+    background-color: chartreuse;
+    margin: 5% auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#result {
+    width: 70%;
+    height: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 3px solid deeppink;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#calculatrice {
+    width: 70%;
+}
+
+.all {
+    width: 19%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: white;
+}
+button:hover {
+    box-shadow: inset 3px  3px 3px deeppink, 3px  3px 3px deeppink;
+}
+
+#autre {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#reset, #copy{
+    width: 19%;
+    height : 50px;
+    font-size: 3rem;
+    background-color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 750px){
+    #container {
+        width: 99%;
+    }
+
+    .all {
+        width: 19%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .all, #result, #reset, #copy {
+        font-size: 2rem;
+        background-color: turquoise;
+        border-radius: 10px;
+        border-color: orange;
+    }
+    button:hover {
+        box-shadow: inset 3px  3px 3px orange, 3px  3px 3px orange;
+    }
+    #container {
+        background-color: white;
+        border: 5px solid orange;
+    }
+}

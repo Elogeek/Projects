@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+}
+
+#horloge {
+    width: 400px;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#image {
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 10px 30px darkgrey;
+    color: aqua;
+}
+
+#taille {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    position: absolute;
+}
+
+#hours, #minutes, #seconds {
+    position: absolute;
+    bottom: 43%;
+    left: 47%;
+    transform-origin: bottom;
+}
+
+#hours {
+    border-right: 6px solid black;
+    height: 80px;
+    top: 90px;
+    border-radius: 0 50% 0 50%;
+}
+
+#minutes {
+    border-right: 7px solid black;
+    height: 140px;
+    top: 31px;
+    border-radius: 0 50% 0 50%;
+    transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
+
+#seconds {
+    border-right: 6px solid orange;
+    height: 90px;
+    top: 80px;
+    border-radius: 0 50% 0 50%;
+    transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+}
+
+#time, #date {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*adaptation for small screens*/
+@media screen and(max-width: 600px) {
+
+    html {
+        font-size: 1.5rem;
+    }
+
+    #horloge,#taille {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and(max-width: 400px) {
+
+    #horloge,#taille {
+
+        display: flex;
+        flex-flow: column nowrap;
+
+    }
+
+}

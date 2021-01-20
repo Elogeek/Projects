@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon démineur</title>
+    <script src="apps.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Démineur</h1>
+    <div class="page">
+
+        <div class="game" id="plateau">
+
+        </div>
+        <div class="options">
+            <div id="result" class="result">
+                <div id="gif" class="gif"></div>
+            </div>
+
+            <div class="menus">
+                <div class="menu" onclick="Demineur.startGame('easy');">
+                    Niveau Facile
+                </div>
+                <div class="menu" onclick="Demineur.startGame('normal');">
+                    Niveau Normal
+                </div>
+                <div class="menu" onclick="Demineur.startGame('hard');">
+                    Niveau Difficile
+                </div>
+                <div class="menu" onclick="Demineur.startGame('extreme');">
+                    Niveau Extrême
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>/* on load scripts */
+    window.onload = function() { Demineur.initialise();}
+    </script>
+    <script src="apps.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 45%;
+    height: 450px;
+}

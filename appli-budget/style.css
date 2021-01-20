@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-family: cursive,sans-serif;
+}
+
+input {
+    padding: 4px;
+}
+
+#spent {
+    border: 3px inset #0099ff;
+    width: 40%;
+    padding: 10px;
+}
+
+#recipe {
+    border : 3px inset #0099ff;
+    width: 40%;
+    padding: 7px;
+}
+
+#result,#saving {
+    border: 3px inset #0099ff;
+    width:40% ;
+    height: 88px;
+    padding: 10px;
+}
+
+ #calculate, #reset {
+    border: 5px inset #0099ff;
+    width: 55px;
+    height: 30px;
+    padding: 3px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 3px 3px darkblue;
+}
+
+ img {
+     width: 13%;
+     position: absolute;
+     top: 60%;
+     right: 0;
+ }
+
+#img2 {
+    width: 13%;
+    position: absolute;
+    top: 38%;
+    right: 0;
+    padding-top: 3px;
+}
+
+#img3 {
+    width: 13%;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    padding-top: 3px;
+}
+
+h1 {
+    padding-bottom: 6px;
+}
+
+#right {
+    width: 45%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#left {
+    width: 45%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+/* responsive*/
+@media screen and (max-width: 1000px){
+
+    #container {
+        flex-direction: column;
+    }
+
+    #right {
+        margin-top: 20px;
+    }
+
+    #right, #left {
+        width: 100%;
+    }
+
+    img {
+        display: none;
+    }
+
+    #calculate,#reset {
+        margin-top: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+}
+

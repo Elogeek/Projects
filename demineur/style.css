@@ -1,0 +1,218 @@
+/* Global */
+* {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight:normal;
+    font-style:normal;
+    color:#454550;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background:#CDCDB4;
+    margin:100px;
+}
+
+p {
+    padding: 8px 0;
+}
+
+a {
+    text-decoration:none;
+    color:#ff9600;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color:#00378B;
+}
+
+ol {
+    margin:0px 28px;
+    padding:0;
+}
+
+li {
+    margin:4px 4px 8px;
+}
+b, strong {
+    font-weight:bold;
+}
+
+i, em {
+    font-style:italic;
+}
+
+blockquote {
+    margin:8px 20px;
+}
+
+input, textarea, select {
+    border:none;
+    padding:0;
+    background:#fdea91;
+    color:#5A5A5A;
+    font-weight:bold;
+    font-size:12px;
+    border-radius:4px;
+}
+
+input, textarea, option {
+    padding:4px 4px;
+    font-weight:bold;
+    color:#5A5A5A;
+    font-size:12px;
+}
+
+textarea {
+    resize: none;
+}
+
+.inputs {
+    width:200px;
+}
+
+.linputs {
+    width:400px;
+}
+
+.sinputs {
+    width:150px;
+}
+
+.vsinputs {
+    width:75px;
+}
+
+.vlinputs {
+    width:100%;
+}
+
+form {
+    margin:0;
+}
+
+.img {
+    font-size:0
+}
+
+sup, sub {
+    font-size:9px;
+    color:inherit;
+}
+
+img {
+    border:0;
+    max-width:100%;
+    height:auto;
+}
+
+/* Titre */
+h1 {
+    color:black;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+
+/* Page */
+.page {
+    font-size:0;
+}
+
+.page .game {
+    width:50%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.page .options {
+    width:50%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+/* Menu */
+.menus .menu {
+    padding:10px 25px;
+    margin:8px;
+    background:#d4fc79;
+    color:black;
+    cursor:pointer;
+    width:200px;
+    box-shadow: black 5px 5px;
+}
+
+/* Resultats */
+.result {
+    text-align:center;
+    font-size:30px;
+}
+
+/* Zone des mines*/
+.field {
+    background: #888888;
+}
+.field .cell {
+    width:30px;
+    height:30px;
+    background:#d4fc79;
+    cursor:pointer;
+    border-left:solid 1px black;
+    border-top:solid 1px black;
+    border-right:solid 1px black;
+    border-bottom:solid 1px black;
+    box-shadow: black 5px 5px;
+}
+
+.field .cell:hover {
+    background:#338833;
+}
+
+.field .cell.bomb {
+    background:#cc3333;
+    cursor:default;
+}
+
+.field .cell.bomb:hover {
+    background:#cc3333;
+}
+
+.field .cell.clear {
+    background:none;
+    cursor:default;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+}
+
+.field .cell.clear:hover {
+    background:none;
+}
+
+.field .cell.marked {
+    background:#d4fc79;
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    content:"!";
+}
+
+.field .cell.marked:hover {
+    background:#d4fc79;
+}
+
+@media screen and (max-width: 850px){
+   .page {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .page {
+        width: 100%;
+    }
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width:100%;
+    font: 1.5rem "Roboto", sans-serif;
+    color: white;
+    border:none;
+}
+
+#container {
+    margin: auto;
+    width: 70vw;
+    height: 58vh;
+}
+
+#bordered-div {
+    margin: 25vh auto;
+    padding: 0.7%;
+    background-color: #eae7e7;
+    width: 72vw;
+    height: 60vh;
+}
+
+#left, #right {
+    display: inline-block;
+    height: 58vh;
+}
+
+#left {
+    width: 65%;
+}
+
+#right{
+    background-image: url(images/slide1.png);
+    background-size:cover;
+    width: 35%;
+}
+
+.line {
+    height: 33.33%;
+}
+
+.carre,.rectangle {
+    display: inline-block;
+    margin-right: -4px;
+    height: 100%;
+    overflow: hidden;
+    border:none;
+    padding-top: 6%;
+    text-align:center;
+}
+
+.carre {
+    width: 33.6%;
+}
+
+.rectangle {
+    width: 66.66%;
+}
+
+button {
+    color: white;
+    padding: 10px;
+    border-radius: 2rem;
+    width: 11.5rem;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+
+button:hover {
+    box-shadow:  inset -1px 2px 16px 0 rgba(0,0,0,0.75), -1px 2px 16px 0 rgba(0,0,0,0.75);
+}
+
+/*centrer mes images*/
+.img-displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#rect-vert,button,#vert {
+    background-color : #64ba7e;
+}
+
+#carre1 {
+    background-color: #efa41d;
+}
+
+#bleu,#carre-bleu {
+    background-color: #498cc8;
+}
+
+#carre-orange,#orange {
+    background-color: #e37333;
+}
+
+#rouge {
+    background-color:#db6355 ;
+}
+
+/*Bradley en gras*/
+#first {
+    font-weight:bold;
+}
+
+a {
+    color:white;
+    text-decoration-line:none;
+}
+/*  animation des liens, ils changent de couleur*/
+a:hover {
+    color:turquoise;
+}
+
+span+p {
+    font-size: 1.2rem;
+}
+
+/** Phone**/
+@media(max-width: 320px) {
+    #bordered-div {
+        background-color: #eae7e7;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        width: 100%;
+    }
+}
+
+@media(max-width: 446px) {
+    #bordered-div {
+        background-color: #eae7e7;
+        width: 100%;
+        height: 150vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 150vh;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        width: 100%;
+        display:block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
