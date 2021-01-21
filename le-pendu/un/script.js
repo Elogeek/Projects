@@ -1,23 +1,46 @@
 let rules = document.getElementById("rules");
-let pendu = document.getElementById("div");
+let canvas = document.getElementById("canvas");
 let letters = document.getElementById("letters");
 let game = document.getElementById("game");
 let easy = document.getElementById("easy");
-let middle = document.getElementById("middle");
+let normal = document.getElementById("normal");
 let hard = document.getElementById("hard");
 let input = document.createElement("input");
 let enter = document.createElement("button");
 let tentative = document.createElement("p");
-let array =["Pitaya", "cacahuètes","mangoustan", "oignons", "carambole", "anone", "physalis", "école", "médecin", "cycliste", "café", "mochi", "sésame", "bureau"];
+let array =[
+    'métal',
+    'musique',
+    'ordinateur',
+    'ravel',
+    'myrtille',
+    'thé',
+    'pâtisserie',
+    'bois',
+    "Pitaya",
+    "cacahuètes",
+    "mangoustan",
+    "oignons",
+    "carambole",
+    "anone",
+    "physalis",
+    "boulangerie",
+    "ingénieur",
+    "cycliste",
+    "café",
+    "mochi",
+    "sésame"
+];
+
 let wordLettres = [];
 let wordLettresR = [];
 let point = 5;
 let wordPin = document.createElement("p");
 
-wordPin.id = "wordPin";
+wordPin.id = "wordPin"
 game.append(wordPin);
 
-rules.innerHTML = "Quelques instructions: " + "<br><br>" + "Vous pouvez choisir la difficulté que vous voulez." + "<br><br>" + "Bonne chance !";
+rules.innerHTML = "Quelques régles: " + "<br><br>" + "Vous pouvez choisir la difficulté que vous voulez (facile: 10, normal: 5, difficile: 3)." + "<br><br>" + "Bonne chance !";
 letters.innerHTML = "lettres ayant échouées :" + "<br><br>";
 gameOn(point)
 
@@ -31,19 +54,36 @@ game.append(input);
 game.append(enter);
 
 /**
- // je commence le jeu
+ // Start the game and initializes the variables
  */
-
+function gameOn(point) {
+    let img = document.createElement("img");
+    img.style.width = "100%";
+    img.style.height = "265px";
+    img.src = "un/canvas.js";
+    canvas.append(img);
+    let points = point;
+    let win = 0;
+    tentative.innerHTML = "Nombre de tentavive: " + points;
+    let num = random();
+    let word = array[num];
+    wordLettresR.splice(0, wordLettresR.length);
+    for(let x = 0; x < word.length; x++) {
+        wordLettresR.push(word.substring(x, (x+1)));
+    }
+    wordChoice(num);
+    choice(word, points, img, win, point);
+}
 
 /**
- // je crée un number random
+ // Create a random number
  */
 function random() {
     return  Math.trunc(Math.random() * array.length);
 }
 
 /**
- // je crée une function qui choisi un mot aléatoire par rapport au nombre
+ // Choice a random word
  */
 function wordChoice(random) {
     let word = array[random];
@@ -55,32 +95,19 @@ function wordChoice(random) {
 }
 
 /**
- //ici, je réinitialise pour la prochaine partie
+ //Reset the game for the next game
  */
 function reset(point) {
-    pendu.removeChild(pendu.lastElementChild);
+    canvas.removeChild(canvas.lastElementChild);
     wordPin.innerHTML = "";
     letters.innerHTML = "lettres utilisées :" + "<br><br>";
     gameOn(point);
-    pendu.append(canvas);
-    let points = point;
-    let win = 0;
-    tentative.innerHTML = "" +
-        "Saissisez une lettre" + " , " + " nombre de tentavive: " + points;
-    let num = random();
-    let word = array[num];
-    wordLettresR.splice(0, wordLettresR.length);
-    for(let x = 0; x < word.length; x++) {
-    wordLettresR.push(word.substring(x, (x+1)));
-}
-wordChoice(num);
-choice(word, points, canvas, win, point);
 }
 
 /**
- //mtnt, il faut gèrer les différents boutons et conditions pour gagner ou perdre
+ //Manages the various buttons and conditions for win or loose
  */
-function choice(word, points, canvas, win, point) {
+function choice(word, points, img, win, point) {
 
     let test = function() {
         if(input.value.length === 1) {
@@ -99,7 +126,7 @@ function choice(word, points, canvas, win, point) {
             }
             if(length === word.length) {
                 points--;
-                image(points, canvas);
+                image(points, img);
             }
             tentative.innerHTML = "Nombre de tentavive: " + points;
             wordPin.innerHTML = "";
@@ -107,11 +134,11 @@ function choice(word, points, canvas, win, point) {
                 wordPin.innerHTML += wordLettres[y];
             }
             if(points === 0) {
-                alert("Perdu");
+                alert("Vous avez perdu !");
                 remove(point);
             }
             else if(win === word.length) {
-                alert("Gagné");
+                alert("Félicitation, vous avez gagné !");
                 remove(point);
             }
         }
@@ -119,7 +146,7 @@ function choice(word, points, canvas, win, point) {
     enter.addEventListener("click", test);
 
     /**
-     //le mode easy
+     //Easy mode of the game
      */
     let easyGame = function () {
         point = 10;
@@ -129,17 +156,17 @@ function choice(word, points, canvas, win, point) {
     easy.addEventListener("click", easyGame);
 
     /**
-     //le mode moyen
+     //Normal mode of the game
      */
-    let middleGame = function () {
+    let normalGame = function () {
         point = 5;
         remove(point);
     }
 
-    middle.addEventListener("click", middleGame);
+    normal.addEventListener("click", normalGame);
 
     /**
-     //le mode hard
+     //Hard mode of the game
      */
     let hardGame = function () {
         point = 3;
@@ -149,15 +176,13 @@ function choice(word, points, canvas, win, point) {
     hard.addEventListener("click", hardGame);
 
     /**
-     // ici, je Supprime addEvent pour les différents boutons et réinitialiser le jeu
+     //Remove addEvent for the various buttons and reset the game
      */
     function remove(point) {
         reset(point,test);
         easy.removeEventListener("click", easyGame);
         enter.removeEventListener("click", test);
-        middle.removeEventListener("click", middleGame);
+        normal.removeEventListener("click", normalGame);
         hard.removeEventListener("click", hardGame);
     }
 }
-
-// mtnt je crée le bonhomme
