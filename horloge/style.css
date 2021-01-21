@@ -49,14 +49,16 @@ body {
 #hours {
     border-right: 6px solid black;
     height: 80px;
-    top: 90px;
+    top: 92px;
+    left: 189px;
     border-radius: 0 50% 0 50%;
 }
 
 #minutes {
     border-right: 7px solid black;
     height: 140px;
-    top: 31px;
+    top: 34px;
+    left: 194px;
     border-radius: 0 50% 0 50%;
     transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
 }
@@ -65,6 +67,7 @@ body {
     border-right: 6px solid orange;
     height: 90px;
     top: 80px;
+    left: 194px;
     border-radius: 0 50% 0 50%;
     transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
 }
