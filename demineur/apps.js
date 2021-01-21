@@ -1,3 +1,5 @@
+window.onload = function() { Demineur.initialise();}
+
 let Demineur = {
     name: 'Demineur',
 //DONNEES DES DIFFICULTE///

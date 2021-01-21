@@ -11,7 +11,7 @@
 }
 
 body {
-    background:#CDCDB4;
+    background-color: white;
     margin:100px;
 }
 
@@ -30,13 +30,14 @@ a:hover {
 }
 
 ol {
-    margin:0px 28px;
+    margin:0 28px;
     padding:0;
 }
 
 li {
     margin:4px 4px 8px;
 }
+
 b, strong {
     font-weight:bold;
 }
