@@ -1,0 +1,109 @@
+{
+  "name": "Trash",
+  "type": [
+    {
+
+      "name": "Yellow",
+      "url": "PoubYellow.png",
+      "wastes": [
+        {
+          "name": "bidon",
+          "url": "bidon.jpg"
+        },
+        {
+          "name": "bouteillePlastique",
+          "url": "boutPlastiques.jpg"
+        },
+        {
+          "name": "briquejus de fruits",
+          "url": "briqueFruits.jpg"
+        },
+        {
+          "name": "brique de lait aux fraises",
+          "url": "briqueLFraises.jpg"
+        },
+        {
+          "name": "canette thé",
+          "url": "canettes.jpg"
+        },
+        {
+          "name": "conserves",
+          "url": "conserves.jpg"
+        }
+      ]
+    },
+
+    {
+      "name": "blue",
+      "url": "poubBlue.png",
+      "wastes": [
+        {
+          "name": "carton",
+          "url": "cartons.jpg"
+        },
+        {
+          "name": "journaux",
+          "url": "journaux.jpg"
+        },
+        {
+          "name": "magazine",
+          "url": "magazines.png"
+        }
+      ]
+    },
+
+    {
+      "name": "red",
+      "url": "poubRed.png",
+      "wastes": [
+        {
+          "name": "cafe",
+          "url": "cafe.png"
+        },
+        {
+          "name": "coquilles d'oeufs",
+          "url": "coqOeufs.jpg"
+        },
+        {
+          "name": "couche",
+          "url": "couche.jpg"
+        },
+        {
+          "name": "os",
+          "url": "os.jpg"
+        },
+        {
+          "name": "peau de banane",
+          "url": "peauBanane.jpg"
+        },
+        {
+          "name": "peau d'orange",
+          "url": "peauOrange.jpg"
+        }
+      ]
+    },
+
+    {
+      "name": "green",
+      "url": "poubGreen.PNG",
+      "wastes": [
+        {
+          "name": "bouteille en verre",
+          "url": "boutVerre.jpg"
+        },
+        {
+          "name": " pots de confiture",
+          "url": "potConfiture.jpg"
+        },
+        {
+          "name": "flacon",
+          "url": "flacon.jpg"
+        },
+        {
+          "name": "huile",
+          "url": "boutHuile.jpg"
+        }
+      ]
+    }
+  ]
+}

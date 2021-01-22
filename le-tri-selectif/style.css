@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    font-size: 3rem;
+}
+
+#container {
+    width: 80%;
+    margin: 3% auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+h1 {
+    width: 30%;
+    margin: 5% auto;
+    text-align:center;
+    color: lightcoral;
+}
+
+#rules {
+    width: 12%;
+    margin: auto;
+    border: 3px inset lightcoral;
+    position: absolute;
+    top: 123px;
+    left:23px;
+    color: darkblue;
+
+}
+
+#begin {
+    width: 18%;
+    font-size: 2rem;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    border: 3px inset darkblue;
+    background-color: lightcoral;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+}
