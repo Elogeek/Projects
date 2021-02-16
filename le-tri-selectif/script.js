@@ -16,8 +16,10 @@ function game(){
     dechets.style.display ="flex";
     game.reload();
     // requête jSON
+    const requestURL = "";
     //ouverture poubelle pour animer un peu le jeu?!
 }
+
 
 begin.addEventListener("click", game);
 

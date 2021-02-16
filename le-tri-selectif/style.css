@@ -68,19 +68,21 @@ h1 {
 }
 
 #poubelle,#dechets {
-    width: 50%;
     height: 20vw;
     border: 3px inset greenyellow;
     display: none;
+    margin-left: 5%;
 }
 
 #poubelle {
     float: left;
     margin-bottom: 10px;
+    width: 30%;
 }
 
 #dechets {
     float: right;
     margin-bottom: 10px;
+    width: 50%;
 }
 
