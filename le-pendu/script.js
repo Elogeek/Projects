@@ -6,7 +6,6 @@ let words = [
     "METROPOLE",
     "MONTAGNE",
     "METEQUE",
-    "VACHE",
     'METAL',
     'MUSIQUE',
     'ORDINATEUR',
@@ -15,9 +14,8 @@ let words = [
     'THE',
     'PATISSERIE',
     'BOIS',
+    "kITSUNE",
     "PITAYA",
-    "CACAHUETES",
-    "MANGOUSTAN",
     "OIGNONS",
     "CARAMBOLE",
     "ANONE",
@@ -25,15 +23,16 @@ let words = [
     "BOULANGERIE",
     "INGENIEUR",
     "MAISON",
+    "TANUKI",
     "CAFE",
+    "DEVELOPPEUR",
     "MOCHI",
     "SESAME",
     "HOTEL",
-    "TELEPHONE",
     "TELEVISION",
-    "FEUILLE",
-    "CROISSANT"
-]
+    "CROISSANT",
+    "ORNITHORYNQUE"
+];
 
 let life = 7;
 
@@ -74,9 +73,11 @@ let winPts = 1;
 for (let valeursButtons of valeurButton) {
     valeursButtons.addEventListener('click', function () {
         document.getElementById('lettersFalse').innerHTML += " " + valeursButtons.innerHTML ;
+        let rules = document.querySelector('#rules');
+        rules.style.display = "none";
 
         let position = arrayWord.indexOf(valeursButtons.innerHTML);
-        //problème la lettre qui apparait +sieurs fois  ne s'affiche pas!!!!//
+        //problème la lettre qui apparait +sieurs fois  ne s'affiche pas!!!!// splice et affichage boucle plutôt que indexof
         let idButton = document.getElementById('letter'+position);
 
         // Win:
@@ -104,9 +105,8 @@ for (let valeursButtons of valeurButton) {
 
 // choice word :
 let choiceBtn = document.getElementById('choiceWord');
-
-choiceBtn.addEventListener('click', function (){
+choiceBtn.addEventListener('click', function () {
     window.location.reload();
-})
+});
 
 
