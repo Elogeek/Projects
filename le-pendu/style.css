@@ -6,7 +6,7 @@
 
 body {
     /*font-size: 62.5%;*/
-    background-image: url("img/fond.jpg");
+    background-color: gray;
     background-size: auto;
 }
 
@@ -29,7 +29,7 @@ h1 {
     position: relative;
     margin: 15rem;
     background-color: white;
-    box-shadow: 0 5px 05px black;
+    box-shadow: 5px 5px 5px 5px black;
     height:70vw;
     width: 80%;
 }
