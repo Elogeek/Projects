@@ -31,13 +31,14 @@ let words = [
     "HOTEL",
     "TELEVISION",
     "CROISSANT",
-    "ORNITHORYNQUE"
+    "ORNITHORYNQUE",
+    "MANGA"
 ];
 
 let life = 7;
 
 // Select a random Words:
-function getRandom(){
+function getRandom() {
     return Math.floor(Math.random() * words.length);
 }
 
@@ -57,7 +58,7 @@ for ( i = 0; i < withWord; i++) {
 //  pictures pendu //
 let img = document.createElement("img");
 img.style.width = "100%";
-img.style.height = "100%";
+
 
 function penduImage (pts) {
     img.src = pts +".PNG";
@@ -77,18 +78,25 @@ for (let valeursButtons of valeurButton) {
         rules.style.display = "none";
 
         let position = arrayWord.indexOf(valeursButtons.innerHTML);
-        //problème la lettre qui apparait +sieurs fois  ne s'affiche pas!!!!// splice et affichage boucle plutôt que indexof
-        let idButton = document.getElementById('letter'+position);
+        ///////WARNING
+        //plus aucune lettre  ne s'affichent dans le mot à trouver
+        // problème la lettre qui apparait +sieurs fois  ne s'affiche pas!!!!
+
+        //letter to find
+        let lettersFind = document.getElementById('lettersBtn');
+        for (i = 0; i < lettersFind; i++) {
+            lettersFind += lettersFind + position;
+        };
 
         // Win:
-        if (winPts === arrayWord.length){
+        if (winPts === arrayWord.length) {
             alert("Félicitations, vous avez gagner !");
             window.location.reload();
         }
         // Correct letter:
-        else if (arrayWord.indexOf(valeursButtons.innerHTML) >= 0 && (idButton.innerHTML !== valeursButtons.innerHTML)){
+        else if (arrayWord.indexOf(valeursButtons.innerHTML) >= 0 && (lettersFind.innerHTML === valeursButtons.innerHTML)){
             winPts++;
-            idButton.innerHTML = valeursButtons.innerHTML;
+            lettersFind.innerHTML = valeursButtons.innerHTML;
         }
         // Loose:
         else {
