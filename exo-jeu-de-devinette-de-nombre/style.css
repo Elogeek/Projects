@@ -52,7 +52,7 @@ body {
 }
 
 #monNumber{
-    width: 15%;
+    width: 87%;
     padding-top: 1%;
     padding-bottom: 1%;
     text-align: center;
@@ -73,7 +73,7 @@ body {
 #instructions { text-shadow: 0.2em 0.5em 0.1em #c1f8ff;
 }
 
-#newGame, #play {
+#play {
     width: 15%;
     margin-top: 2%;
     padding-top: 1%;
@@ -81,13 +81,13 @@ body {
     background-color: white;
 }
 
-#newGame,#play:hover {
+#play:hover {
     box-shadow:  inset 5px 5px 15px lightslategray, 5px 5px 15px lightslategray;
 }
 
 /* pour smartphone */
 @media screen and (max-width: 1050px){
-    #newGame, #play {
+    #play {
         width: 20%;
     }
 }

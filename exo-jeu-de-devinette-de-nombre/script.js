@@ -65,7 +65,7 @@ function reset() {
 }
 
 // pour recommencer une partie
-document.getElementById("newGame").addEventListener("click", reset);
+window.location.reload();
 
 // pour mon chrono qui ne fonctionne pas encore
 let chrono = document.getElementById("chrono");
