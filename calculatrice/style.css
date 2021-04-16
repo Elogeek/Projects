@@ -37,19 +37,23 @@ body {
     background-color: white;
 }
 
-#calculatrice {
+#calculator {
     width: 70%;
 }
 
-.all {
-    width: 19%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 3rem;
+#calculator div {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    margin: 1%;
+    font-size: xxx-large;
     font-weight: bold;
     background-color: white;
+    min-width: 10rem;
 }
 button:hover {
     box-shadow: inset 3px  3px 3px deeppink, 3px  3px 3px deeppink;
@@ -74,10 +78,18 @@ button:hover {
 @media screen and (max-width: 750px){
     #container {
         width: 99%;
+        background-color: deeppink;
     }
 
-    .all {
-        width: 19%;
+    button,#result {
+        min-width: 6rem;
+        background-color: darkturquoise;
+        color: white;
+        padding: 2px;
+    }
+
+    button:hover {
+        box-shadow: inset 3px  3px 3px turquoise, 0 0 0 turquoise;
     }
 }
 
@@ -92,7 +104,8 @@ button:hover {
         box-shadow: inset 3px  3px 3px orange, 3px  3px 3px orange;
     }
     #container {
-        background-color: white;
-        border: 5px solid orange;
+        background-color: orange;
+        border: 5px solid turquoise;
     }
+
 }
