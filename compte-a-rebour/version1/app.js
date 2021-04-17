@@ -1,5 +1,5 @@
 // DOM
-const txtBox = document.querySelector('.txt');
+const txtBox = document.querySelector('.text');
 const timeBox = document.querySelector('.time');
 const daysBox = document.getElementById('days');
 const hoursBox = document.getElementById('hours');
@@ -31,6 +31,8 @@ let getRemainingTime = setInterval(() => {
     if (timeRemaining <= 0) {
         clearInterval(getRemainingTime);
         txtBox.innerText = 'Happy New Year 2022 !';
+        let container = document.querySelector("#container");
+        container.style.backgroundImage = 'images/HNY.gif';
         timeBox.style.display = 'none';
     }
 

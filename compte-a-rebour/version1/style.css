@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image/new-year.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.time {
+   color:#00a4e4;
+   font-weight: bold;
+   font-size: 6rem;
+}
+
+.text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12rem;
+    color: darkturquoise;
+    margin-top: 20rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+
+    body,.container {
+        background-image: none;
+        background-color: lightcyan;
+        width: 100%;
+    }
+
+    .text, .time {
+        font-size: 3rem;
+    }
+
+    .text {
+        margin-top: 8rem;
+    }
+}
+
+
+
+
