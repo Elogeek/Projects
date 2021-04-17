@@ -1,12 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     width: 100%;
     background-color: beige;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .image {
-    width: 45%;
-    height: 450px;
+    width: 53%;
+    height: 69rem;
+    box-shadow: 1px 1px 9px 3px #000000;
+}
+
+span {
+    margin-right: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    position: relative;
+}
+
+@media screen and (max-width: 750px) {
+
+    body {
+        width: 100%;
+        background-color: beige;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    span {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-right: 3rem;
+        color: black;
+        position: relative;
+    }
+
+    body .image {
+        width: 42%;
+        height: 23rem;
+        box-shadow: 1px 1px 9px 3px #000000;
+    }
+
 }

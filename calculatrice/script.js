@@ -12,7 +12,7 @@ document.querySelector("#delete").addEventListener("click", e =>
     result.innerText = result.innerHTML.slice(0, result.innerHTML.length - 1)
 );
 
-// Dans le presse papier.
+// copy to clipboard
 document.querySelector("#copy").addEventListener("click",  e => {
     // Range object creation ( contains nodes portions )
     const range = document.createRange();

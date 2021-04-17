@@ -24,8 +24,8 @@ body {
 }
 
 #result {
-    width: 70%;
-    height: 50px;
+    width: 43%;
+    height: 89px;
     margin-top: 5%;
     margin-bottom: 5%;
     padding-top: 1%;
@@ -61,7 +61,7 @@ button:hover {
     box-shadow: inset 3px  3px 3px deeppink, 3px  3px 3px deeppink;
 }
 
-#autre {
+#other {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -73,19 +73,31 @@ button:hover {
 
     #container {
         width: 99%;
-        background-color: deeppink;
+        background-color: chartreuse;
+        border: 3px solid deeppink;
     }
 
     button,#result {
+        font-size: x-large;
         min-width: 6rem;
-        background-color: darkturquoise;
-        color: white;
-        padding: 2px;
+        color: black;
+        padding: 10px;
+        border-color: deeppink;
+        margin: 1%;
+    }
+
+    #result {
+        height: 37px;
+        width: 42%;
+        border: 2px inset deeppink;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     button:hover {
-        box-shadow: inset 3px  3px 3px turquoise, 0 0 0 turquoise;
+        box-shadow: inset 3px 3px 3px deeppink, 3px  3px 3px deeppink;
     }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -95,6 +107,9 @@ button:hover {
         background-color: turquoise;
         border-radius: 10px;
         border-color: orange;
+        min-width: 6rem;
+        padding: 10px;
+        margin: 1%;
     }
 
     button:hover {
