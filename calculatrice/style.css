@@ -22,6 +22,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 #result {
     width: 70%;
     height: 50px;
@@ -55,6 +56,7 @@ button {
     background-color: white;
     min-width: 10rem;
 }
+
 button:hover {
     box-shadow: inset 3px  3px 3px deeppink, 3px  3px 3px deeppink;
 }
@@ -67,15 +69,8 @@ button:hover {
     margin-top: 3%;
 }
 
-#reset, #copy{
-    width: 19%;
-    height : 50px;
-    font-size: 3rem;
-    background-color: white;
-    font-weight: bold;
-}
+@media (max-width: 800px) {
 
-@media screen and (max-width: 750px){
     #container {
         width: 99%;
         background-color: deeppink;
@@ -94,15 +89,18 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
-    .all, #result, #reset, #copy {
+
+    button,#result {
         font-size: 2rem;
         background-color: turquoise;
         border-radius: 10px;
         border-color: orange;
     }
+
     button:hover {
         box-shadow: inset 3px  3px 3px orange, 3px  3px 3px orange;
     }
+
     #container {
         background-color: orange;
         border: 5px solid turquoise;

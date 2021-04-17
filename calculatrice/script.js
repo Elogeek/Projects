@@ -1,25 +1,11 @@
-let result = document.getElementById("result");
+const result = document.getElementById("result");
+const buttons = document.querySelectorAll('#calculator :not(#delete, #equal)');
 
-document.getElementById("chiffre1").addEventListener("click", function () {
-    result.innerText = result.innerHTML + 1;
-});
-
-document.getElementById("chiffre2").addEventListener("click", function () {
-    result.innerText = result.innerHTML + 2;
-});
-
-document.getElementById("chiffre3").addEventListener("click", function () {
-    result.innerText = result.innerHTML + 3;
-});
-
-document.getElementById("chiffre4").addEventListener("click", function () {
-    result.innerText = result.innerHTML + 4;
-});
-
-document.getElementById("chiffre5").addEventListener("click", function () {
-    result.innerText = result.innerHTML + 5;
-});
-
+for(const button of buttons) {
+    //delete space
+    button.addEventListener('click', e => result.innerHTML += e.target.innerText.trim());
+}
+// click calculator buttons
 document.querySelector("#reset").addEventListener("click", e => result.innerText = " ");
 document.querySelector("#equal").addEventListener("click", e =>  result.innerHTML = eval(result.innerHTML));
 document.querySelector("#delete").addEventListener("click", e =>
@@ -36,7 +22,3 @@ document.querySelector("#copy").addEventListener("click",  e => {
         alert("Copié!");
     }
 });
-
-
-
-
