@@ -14,7 +14,7 @@ document.getElementById("button1").addEventListener("click", function() {
     let container = document.getElementById("container");
     let textDiv = document.createElement("div");
     textDiv.innerHTML = "Bonjour, je m'appelle " + name + ", hier, nous étions en voyage. C'était les vacances. On est parti en famille à "
-        + city + ". Les enfants étaint affamés. Au loin on voyait l'affiche  " + places + " où cuisinait " + nameCook
+        + city + ". Les enfants étaient affamés. Au loin on voyait l'affiche  " + places + " où cuisinait " + nameCook
         + ". Tout à coup,  " + object + " est sorti du coffre! Je l' ai/J'ai " + verb + " dessus et laissé là !";
     container.appendChild(textDiv);
 });
