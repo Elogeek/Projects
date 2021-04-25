@@ -23,7 +23,7 @@ function checkButton() {
     });
 }
 
-//it checks if all the boxes are completed
+//// the function checks if all the boxes are filled
 function checkInputValue() {
     let inputTab = document.getElementsByTagName("input");
     let tabValueToPlace = [];
