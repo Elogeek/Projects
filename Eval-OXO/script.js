@@ -1,5 +1,6 @@
 const CLICK_LEFT = 0, CLICK_RIGHT = 2;
 let playerX = false, playerO = false;
+
 let cases = document.getElementsByClassName("case");
 
 //Ici square contient un nouvel élément .case de la liste d'éléments a chaque passage de la boucle !

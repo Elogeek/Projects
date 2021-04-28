@@ -13,19 +13,25 @@ body {
     font-family:  cursive;
 }
 
+/*title*/
+.title img {
+    width: 32%;
+}
+
 .container {
     width: 40%;
     margin: 10px auto;
     text-align: center;
-    background-color: #00FFFF;
+    height: 78rem;
 }
 
+/*space game*/
 #game-area {
-    margin-top: 15px;
+    margin-top: 11rem;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-   background-color: white;
+    background-color: white;
 }
 
 .case {
@@ -33,28 +39,45 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 10rem;
-    width: 33%;
-    height: 15rem;
-    border: 3px solid black;
+    width: 30%;
+    height: 17rem;
+    border: 3px inset #00a4e4 ;
 }
 
+/*win*/
 #won {
-    border: 1px dotted #00a4e4;
+    border: 3px solid #00a4e4;
     width: 20%;
-    margin: 20px auto;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 5rem;
     font-size: 2rem;
-    vertical-align: middle;
+    position: relative;
+    bottom: 69rem;
+    left: 94rem;
 }
 
-button {
-    padding: 20px;
-    margin-left: 700px;
-    background-color: cornflowerblue;
+/* my modal window and btn rest game*/
+#btnWindow, button {
     color: white;
+    background-color: #6fd6ff;
+    text-decoration-line: none;
+    position: relative;
+    bottom: 63rem;
+    left: 165rem;
     font-weight: bold;
-    border-radius: 10px;
+    font-size: 2rem;
+    border: 3px solid #6fd6ff;
+    padding: 1rem;
+}
+
+.modal {
+    font-size: 18px;
+}
+
+#aClose {
+    text-decoration-line: none;
+    color: #444444;
+}
+
+#aClose:hover {
+    color: #0099ff;
 }
